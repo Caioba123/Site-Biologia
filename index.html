@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tipos de Plantas e Terrários: Guia Completo para Conhecer e Cultivar</title>
+  <style>
+    /* Reset e básico */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f4f9f4;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2a7a2a;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+    }
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-radius: 0 0 12px 12px;
+    }
+    section {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .plant-type {
+      margin-bottom: 2rem;
+    }
+    .plant-type h3 {
+      margin-bottom: 0.3rem;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .video-container iframe, 
+    .video-container object, 
+    .video-container embed {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      background-color: #2a7a2a;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 2rem auto 1rem;
+      width: 250px;
+    }
+    button:hover {
+      background-color: #226622;
+    }
+    /* Quiz */
+    #quiz-container {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      display: none;
+    }
+    #quiz-container h2 {
+      margin-top: 0;
+    }
+    .question {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .answers {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 1.5rem;
+    }
+    .answers li {
+      margin-bottom: 0.5rem;
+    }
+    .answers label {
+      cursor: pointer;
+    }
+    #submit-btn {
+      background-color: #4caf50;
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    #submit-btn:hover {
+      background-color: #3b8e3b;
+    }
+    #result {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #2a7a2a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tipos de Plantas e Terrários: Guia Completo para Conhecer e Cultivar</h1>
+</header>
+
+<main>
+  <!-- Seção 1 – Introdução -->
+  <section id="introducao">
+    <h2>Introdução</h2>
+    <p>As plantas são essenciais para o meio ambiente e a vida humana. Elas produzem oxigênio, regulam o clima, oferecem alimento e abrigo para inúmeras espécies, além de proporcionar beleza e bem-estar. Neste site, você conhecerá os 6 principais tipos de plantas e um guia completo sobre terrários — mini jardins que trazem a natureza para dentro de casa.</p>
+  </section>
+
+  <!-- Seção 2 – Os 6 Tipos de Plantas -->
+  <section id="tipos-de-plantas">
+    <h2>Os 6 Tipos de Plantas</h2>
+
+    <div class="plant-type" id="briófitas">
+      <h3>Briófitas</h3>
+      <img src="image.png" alt="Musgo (Briófitas)" />
+      <p>Plantas avasculares, como os musgos, que não possuem vasos condutores de seiva. Geralmente pequenas e encontradas em ambientes úmidos, ajudam a conservar o solo e a umidade. São importantes para a biodiversidade e indicadoras da qualidade ambiental.</p>
+    </div>
+
+    <div class="plant-type" id="pteridofitas">
+      <h3>Pteridófitas</h3>
+      <img src="image.png" alt="Samambaia (Pteridófitas)" />
+      <p>Plantas vasculares sem sementes, como as samambaias. Possuem vasos condutores que transportam água e nutrientes, mas se reproduzem por esporos. São importantes na recuperação de solos degradados e utilizadas na ornamentação.</p>
+    </div>
+
+    <div class="plant-type" id="gimnospermas">
+      <h3>Gimnospermas</h3>
+      <img src="image.png" alt="Pinheiro (Gimnospermas)" />
+      <p>Plantas com sementes expostas, como os pinheiros. São geralmente árvores com importância econômica para a produção de madeira, papel e resinas. Contribuem para a formação de florestas e regulam o clima.</p>
+    </div>
+
+    <div class="plant-type" id="angiospermas">
+      <h3>Angiospermas</h3>
+      <img src="image.png" alt="Flor de Rosa (Angiospermas)" />
+      <p>Plantas com flores e frutos, a maior categoria de plantas. São fundamentais para a alimentação humana e animal, além de sua importância na economia, com culturas como trigo, arroz, frutas e flores ornamentais.</p>
+    </div>
+
+    <div class="plant-type" id="algas">
+      <h3>Algas</h3>
+      <img src="image.png" alt="Algas" />
+      <p>Organismos aquáticos fotossintetizantes, que podem ser unicelulares ou multicelulares. São base da cadeia alimentar aquática, produzem grande parte do oxigênio da Terra e são usadas na indústria alimentícia e farmacêutica.</p>
+    </div>
+
+    <div class="plant-type" id="plantas-carnivoras">
+      <h3>Plantas Carnívoras</h3>
+      <img src="image.png" alt="Dionaea (Plantas Carnívoras)" />
+      <p>Plantas que capturam pequenos animais para obter nutrientes, geralmente em ambientes pobres em solo fértil. Exemplos incluem a dionéia e a nepenthes. Possuem mecanismos adaptados para atrair e capturar presas.</p>
+    </div>
+  </section>
+
+  <!-- Seção 3 – Terrários: Guia Completo -->
+  <section id="terrarios">
+    <h2>Terrários: Guia Completo</h2>
+    <p>Terrários são mini jardins em recipientes fechados ou abertos que permitem cultivar plantas em pequenos espaços, trazendo a natureza para dentro de casa. Eles podem ser:</p>
+    <ul>
+      <li><strong>Fechados:</strong> com tampa ou vidro que mantém a umidade.</li>
+      <li><strong>Abertos:</strong> recipientes sem tampa, que precisam de rega mais frequente.</li>
+    </ul>
+    <p><strong>Vantagens:</strong> decoração natural, fácil manutenção, melhora a qualidade do ar e relaxa.</p>
+
+    <h3>Materiais Necessários</h3>
+    <ul>
+      <li>Recipientes de vidro ou plástico transparente</li>
+      <li>Substrato (terra especial para plantas)</li>
+      <li>Pedras pequenas para drenagem</li>
+      <li>Carvão ativado para evitar mofo</li>
+      <li>Plantas indicadas: suculentas, musgos, pequenas samambaias, cactos (para aberto)</li>
+    </ul>
+
+    <h3>Passo a Passo para Montar um Terrário Saudável</h3>
+    <ol>
+      <li>Coloque uma camada de pedras no fundo para drenagem.</li>
+      <li>Adicione uma fina camada de carvão ativado para evitar odores e fungos.</li>
+      <li>Acrescente o substrato adequado.</li>
+      <li>Plante as espécies escolhidas com cuidado.</li>
+      <li>Decore com pedras, musgos ou pequenos enfeites.</li>
+      <li>Finalize fechando o recipiente (se for fechado).</li>
+    </ol>
+
+    <h3>Cuidados Essenciais</h3>
+    <ul>
+      <li>Iluminação indireta, evitando luz solar direta que queima as plantas.</li>
+      <li>Rega moderada: mantenha o solo úmido, mas sem encharcar.</li>
+      <li>Ventilação para terrários fechados, abrindo ocasionalmente para evitar mofo.</li>
+      <li>Manutenção: remova folhas secas e controle pragas.</li>
+    </ul>
+
+    <h3>Dicas para Evitar Problemas Comuns</h3>
+    <ul>
+      <li>Evite excesso de água para prevenir mofo e apodrecimento.</li>
+      <li>Use carvão ativado e mantenha ventilação adequada.</li>
+      <li>Escolha plantas compatíveis com o ambiente do terrário.</li>
+    </ul>
+  </section>
+
+  <!-- Seção 4 – Videoaula sobre Terrários -->
+  <section id="videoaula">
+    <h2>Videoaula sobre Terrários</h2>
+    <div class="video-container">
+      <!-- Exemplo de vídeo no YouTube -->
+      <iframe src="https://youtu.be/zkAhvpAKgII?si=dWSR1mOXfzb-h7ax" title="Videoaula sobre Terrários" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Seção 5 – Curiosidades e Aplicações -->
+  <section id="curiosidades">
+    <h2>Curiosidades e Aplicações</h2>
+    <ul>
+      <li>Algumas plantas possuem propriedades medicinais usadas há séculos.</li>
+      <li>Terrários são uma forma sustentável e econômica de decoração para ambientes urbanos.</li>
+      <li>Plantas ajudam a reduzir o estresse e melhoram a qualidade do ar em ambientes internos.</li>
+      <li>Algas são usadas para produção de biocombustíveis e cosméticos.</li>
+      <li>Plantas carnívoras são fascinantes adaptações para ambientes pobres em nutrientes.</li>
+    </ul>
+  </section>
+
+  <!-- Seção 6 – Conclusão -->
+  <section id="conclusao">
+    <h2>Conclusão</h2>
+    <p>Conhecer os diferentes tipos de plantas e aprender a cultivar terrários é uma maneira de se conectar com a natureza, mesmo em ambientes urbanos. Essa prática traz benefícios ambientais, estéticos e de bem-estar para sua casa e sua vida.</p>
+  </section>
+
+  <!-- Seção Final – Call to Action -->
+  <section id="call-to-action">
+    <button id="start-quiz-btn">Teste seus conhecimentos: Faça o Quiz Agora!</button>
+  </section>
+
+  <!-- Quiz Interativo -->
+  <section id="quiz-container">
+    <h2>Quiz: Tipos de Plantas e Terrários</h2>
+    <form id="quiz-form">
+      <!-- Questões serão inseridas via JS -->
+    </form>
+    <button id="submit-btn">Enviar Respostas</button>
+    <div id="result"></div>
+  </section>
+</main>
+
+<script>
+  // Quiz Data
+  const quizQuestions = [
+    {
+      question: "Qual planta é avascular e geralmente encontrada em ambientes úmidos?",
+      options: ["Pteridófitas", "Briófitas", "Gimnospermas", "Angiospermas"],
+      answer: 1
+    },
+    {
+      question: "Qual tipo de planta possui sementes expostas?",
+      options: ["Gimnospermas", "Angiospermas", "Briófitas", "Algas"],
+      answer: 0
+    },
+    {
+      question: "Qual planta é conhecida por capturar pequenos animais para obter nutrientes?",
+      options: ["Plantas Carnívoras", "Algas", "Samambaias", "Musgos"],
+      answer: 0
+    },
+    {
+      question: "Qual é a camada fundamental para drenagem em um terrário?",
+      options: ["Substrato", "Carvão ativado", "Pedras pequenas", "Folhas secas"],
+      answer: 2
+    },
+    {
+      question: "Terrários fechados mantêm qual característica importante?",
+      options: ["Alta ventilação", "Umidade constante", "Solo seco", "Luz solar direta"],
+      answer: 1
+    },
+    {
+      question: "Qual grupo de plantas inclui as flores e frutos?",
+      options: ["Gimnospermas", "Angiospermas", "Briófitas", "Pteridófitas"],
+      answer: 1
+    },
+    {
+      question: "As algas são importantes porque:",
+      options: [
+        "Produzem oxigênio e são base da cadeia alimentar aquática",
+        "São plantas vasculares",
+        "Capturam insetos",
+        "São árvores grandes"
+      ],
+      answer: 0
+    },
+    {
+      question: "Qual planta é um exemplo de Pteridófita?",
+      options: ["Pinheiro", "Samambaia", "Musgo", "Rosa"],
+      answer: 1
+    },
+    {
+      question: "Por que se usa carvão ativado em terrários?",
+      options: [
+        "Para decorar",
+        "Para evitar mofo e odores",
+        "Para ajudar a planta crescer rápido",
+        "Para absorver a água"
+      ],
+      answer: 1
+    },
+    {
+      question: "Qual cuidado é essencial para evitar mofo em terrários fechados?",
+      options: [
+        "Evitar ventilação",
+        "Regar em excesso",
+        "Abrir ocasionalmente para ventilação",
+        "Deixar no sol forte"
+      ],
+      answer: 2
+    }
+  ];
+
+  const quizForm = document.getElementById('quiz-form');
+  const quizContainer = document.getElementById('quiz-container');
+  const startQuizBtn = document.getElementById('start-quiz-btn');
+  const submitBtn = document.getElementById('submit-btn');
+  const resultDiv = document.getElementById('result');
+
+
+  function loadQuiz() {
+    quizForm.innerHTML = '';
+    quizQuestions.forEach((q, i) => {
+      const questionElem = document.createElement('div');
+      questionElem.classList.add('question-block');
+
+      const questionTitle = document.createElement('p');
+      questionTitle.className = 'question';
+      questionTitle.textContent = (i + 1) + '. ' + q.question;
+      questionElem.appendChild(questionTitle);
+
+      const answersList = document.createElement('ul');
+      answersList.className = 'answers';
+
+      q.options.forEach((option, idx) => {
+        const li = document.createElement('li');
+
+        const label = document.createElement('label');
+        label.htmlFor = `q${i}_option${idx}`;
+
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = `question${i}`;
+        input.id = `q${i}_option${idx}`;
+        input.value = idx;
+
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(option));
+
+        li.appendChild(label);
+        answersList.appendChild(li);
+      });
+
+      questionElem.appendChild(answersList);
+      quizForm.appendChild(questionElem);
+    });
+  }
+
+  
+  function calculateResults() {
+    let score = 0;
+    let answeredAll = true;
+
+    for (let i = 0; i < quizQuestions.length; i++) {
+      const options = document.getElementsByName('question' + i);
+      let selected = -1;
+
+      for (const option of options) {
+        if (option.checked) {
+          selected = parseInt(option.value);
+          break;
+        }
+      }
+
+      if (selected === -1) {
+        answeredAll = false;
+        break;
+      }
+
+      if (selected === quizQuestions[i].answer) {
+        score++;
+      }
+    }
+
+    if (!answeredAll) {
+      alert('Por favor, responda todas as perguntas antes de enviar.');
+      return null;
+    }
+
+    return score;
+  }
+
+  // Mostrar quiz ao clicar no botão
+  startQuizBtn.addEventListener('click', () => {
+    quizContainer.style.display = 'block';
+    startQuizBtn.style.display = 'none';
+    loadQuiz();
+    window.scrollTo({
+      top: quizContainer.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+
+  submitBtn.addEventListener('click', () => {
+    const score = calculateResults();
+    if (score !== null) {
+      resultDiv.textContent = `Você acertou ${score} de ${quizQuestions.length} perguntas!`;
+      submitBtn.disabled = true;
+    }
+  });
+</script>
+
+</body>
+</html>
